@@ -6,8 +6,7 @@ phases:
       - echo "bi"
       - 
   build:
-    commands:
-      - curl -X POST "https: //dora.aws-dev.jenkins.autodesk.com/v1/deploy-frequency" -H "accept:application/json" -H "Content-Type:application/json" -H  "x-api-key: WuipIZzmDD8znzvH0ikpk9ACOqcp5BjL8LiwO61F" -d "{\"serviceId\":\"ICMPE\",\"deployTimestamp\":1561594202,\"uniqueId\":\"3.0.12\"}"
+    commands: - curl -X POST "https://dora.aws-dev.jenkins.autodesk.com/v1/deploy-frequency" -H "accept:application/json" -H "Content-Type:application/json" -H  "x-api-key: WuipIZzmDD8znzvH0ikpk9ACOqcp5BjL8LiwO61F" -d "{\"serviceId\":\"ICMPE\",\"deployTimestamp\":1561594202,\"uniqueId\":\"3.0.12\"}"
 artifacts:
   files:
     - '**/*'
