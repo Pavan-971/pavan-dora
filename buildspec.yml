@@ -11,7 +11,7 @@ phases:
     commands:
       - echo CODEBUILD_BUILD_ID is $CODEBUILD_BUILD_ID
       - date +%s
-      - Run.sh  $(date +%s) $CODEBUILD_BUILD_ID
+      - Run.sh  
       
       
 artifacts:
