@@ -1,7 +1,7 @@
 version: 0.2
 env:
   secrets-manager:
-    USERNAME: mysecret>:aora_ap_ky
+    USERNAME: mysecret:aoraky
 phases:
   install:
     commands:
