@@ -9,6 +9,7 @@ phases:
   build:
     commands:
       - echo Build started on `date` and CODEBUILD_BUILD_ID is $CODEBUILD_BUILD_ID
+      - echo secretvalue is $APISECRETKEY
       
 artifacts:
   files:
