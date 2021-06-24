@@ -9,7 +9,6 @@ phases:
   build:
     commands:
       - echo Build started on `date` and CODEBUILD_BUILD_ID is $CODEBUILD_BUILD_ID
-      - curl -X POST "https://dora.aws-dev.jenkins.autodesk.com/v1/deploy-frequency" -H "accept:application/json" -H "Content-Type:application/json" -H "x-api-key:$APISECRETKEY" -d "{\"serviceId\":\"ICMPE\",\"deployTimestamp\":1561594202,\"uniqueId\":\$CODEBUILD_BUILD_ID\}"
       
 artifacts:
   files:
