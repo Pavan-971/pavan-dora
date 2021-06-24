@@ -11,6 +11,7 @@ phases:
     commands:
       - echo CODEBUILD_BUILD_ID is $CODEBUILD_BUILD_ID
       - date +%s
+      - chmod 755 ./resources/shell_scripts/harmony-scan.sh
       - Run.sh  
       
       
