@@ -12,8 +12,7 @@ phases:
       - echo CODEBUILD_BUILD_ID is $CODEBUILD_BUILD_ID
       - date +%s
       - pwd
-      - chmod 755 Run.sh 
-      - bash Run.sh $(date +%s) $CODEBUILD_BUILD_ID
+      - bash Run.sh $(date +%s) $CODEBUILD_BUILD_ID $APISTK
       
       
 artifacts:
