@@ -1,4 +1,10 @@
 version: 0.2
+env:
+  BuildId: $CODEBUILD_BUILD_ID
+  Buildidk: $(echo $BuildI| cut -d':' -f 2)
+  
+    
+
 phases:
   install:
     commands:
@@ -6,8 +12,6 @@ phases:
   build:
     commands:
       - echo Build started on `date` and CODEBUILD_BUILD_ID is $CODEBUILD_BUILD_ID
-      - BuildId = $CODEBUILD_BUILD_ID
-      - Buildidk = $(echo $BuildI| cut -d':' -f 2)
       - date +%s
       - echo $Buildidk
       
