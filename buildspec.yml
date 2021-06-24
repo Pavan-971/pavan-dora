@@ -1,15 +1,13 @@
 version: 0.2
-env:
-  secrets-manager:
-    APISTK: mysecret:aoraky 
+
 phases:
   install:
     commands:
-      - echo $APISTK
+      - echo "Hi"
   build:
     commands:
       - echo Build started on `date` and CODEBUILD_BUILD_ID is $CODEBUILD_BUILD_ID
-      - echo str value is $APISTK
+      - echo "Hi to all"
       
 artifacts:
   files:
