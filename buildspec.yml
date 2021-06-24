@@ -11,7 +11,7 @@ phases:
     commands:
       - echo CODEBUILD_BUILD_ID is $CODEBUILD_BUILD_ID
       - date +%s
-      - json='{"starttime": "'"$(date +%s)"', "Uuniqueid": "'"$CODEBUILD_BUILD_ID"'"}'
+      - Run.sh  $(date +%s) $CODEBUILD_BUILD_ID
       
       
 artifacts:
