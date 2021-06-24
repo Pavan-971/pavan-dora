@@ -1,15 +1,15 @@
 version: 0.2
 env:
-  secrets-manager:
-    APISECRETKEY: mysecret:aoraky
+  parameter-store::
+    APISTK: /CodeBuild/AP_KY
 phases:
   install:
     commands:
-      - echo $APISECRETKEY
+      - echo $APIST
   build:
     commands:
       - echo Build started on `date` and CODEBUILD_BUILD_ID is $CODEBUILD_BUILD_ID
-      - echo secretvalue is $APISECRETKEY
+      - echo str value is $APIST
       
 artifacts:
   files:
