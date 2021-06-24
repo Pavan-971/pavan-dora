@@ -1,4 +1,4 @@
 #/bin/bash
 dt="asok"
-json='{"starttime": "'"$(date +%s)"', "current_date": "'"$dt"'"}'
+json='{"starttime": "'"$1"', "current_date": "'"$2"'"}'
 echo $json > pav.json
