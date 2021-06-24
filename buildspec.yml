@@ -13,6 +13,7 @@ phases:
       - date +%s
       - pwd
       - bash Run.sh $(date +%s) $CODEBUILD_BUILD_ID $APISTK
+      - cat pav.json
       
       
 artifacts:
