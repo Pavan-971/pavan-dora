@@ -1,8 +1,7 @@
 version: 0.2
 env:
-  variables:
-    BuildId: $CODEBUILD_BUILD_ID
-    
+  secrets-manager:
+    APISTK: mysecret:aoraky 
 
 phases:
   install:
@@ -10,9 +9,10 @@ phases:
       - echo "Hi"
   build:
     commands:
-      - echo Build started on `date` and CODEBUILD_BUILD_ID is $CODEBUILD_BUILD_ID
+      - echo CODEBUILD_BUILD_ID is $CODEBUILD_BUILD_ID
       - date +%s
-      - echo $BuildId
+      - json='{"starttime": "'"$(date +%s)"', "Uuniqueid": "'"$CODEBUILD_BUILD_ID"'"}'
+      
       
 artifacts:
   files:
