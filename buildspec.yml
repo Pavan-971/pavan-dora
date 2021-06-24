@@ -1,6 +1,6 @@
 version: 0.2
 env:
-  parameter-store::
+  parameter-store:
     APISTK: /CodeBuild/AP_KY
 phases:
   install:
