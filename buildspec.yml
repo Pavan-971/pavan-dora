@@ -10,8 +10,8 @@ phases:
     commands:
       - echo Build started on `date` and CODEBUILD_BUILD_ID is $CODEBUILD_BUILD_ID
       - date +%s
-      - BuildId: $CODEBUILD_BUILD_ID
-      - Buildidk: $(echo $BuildI| cut -d':' -f 2)
+      - BuildId = $CODEBUILD_BUILD_ID
+      - Buildidk = $(echo $BuildI| cut -d':' -f 2)
       - echo $Buildidk
       
 artifacts:
