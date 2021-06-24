@@ -13,7 +13,7 @@ phases:
       - date +%s
       - pwd
       - chmod 755 Run.sh 
-      - Run.sh  
+      - bash Run.sh  
       
       
 artifacts:
