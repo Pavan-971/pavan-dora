@@ -6,7 +6,6 @@ phases:
   install:
     commands:
       - echo $USERNAME
-      - 
   build:
     commands:
       - echo Build started on `date` and CODEBUILD_BUILD_ID is $CODEBUILD_BUILD_ID
