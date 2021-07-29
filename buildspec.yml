@@ -12,8 +12,7 @@ phases:
       - echo CODEBUILD_BUILD_ID is $CODEBUILD_BUILD_ID
       - date +%s
       - pwd
-      - bash Run.sh $(date +%s) $CODEBUILD_BUILD_ID $APISTK $SERVICEID
-      - cat pav.json
+      - bash dat.sh
       
       
 artifacts:
